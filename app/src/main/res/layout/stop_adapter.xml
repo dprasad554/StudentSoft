@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_stopname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="0.5"
+                android:text=""
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                android:gravity="left"/>
+            <ImageView
+                android:id="@+id/tv_studentlist"
+                android:layout_width="22dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/user"
+                android:gravity="right"
+                android:layout_weight="0"
+                android:layout_margin="5dp"/>
+            <ImageView
+                android:id="@+id/tv_reached"
+                android:layout_width="22dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/location_white"
+                android:gravity="right"
+                android:layout_weight="0"
+                android:layout_margin="5dp"/>
+
+
+            <TextView
+                android:id="@+id/tv_upnext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:gravity="bottom"
+                android:text=" Next"
+                android:textColor="@color/colorWhite"
+                android:drawableStart="@drawable/upcomming"
+                android:textSize="20sp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

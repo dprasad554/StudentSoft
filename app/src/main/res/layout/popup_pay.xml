@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/VL_psd_menu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/vT_psd_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="Payment"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_color_light"/>
+
+    <TextView
+        android:id="@+id/vT_psd_cod"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:textColor="@color/colorWhite"
+        android:textAllCaps="true"
+        android:background="@drawable/rounded_button"
+        android:text="COD"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/vT_psd_online"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:textColor="@color/colorWhite"
+        android:textAllCaps="true"
+        android:background="@drawable/rounded_button"
+        android:text="Pay Online"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"/>
+    <TextView
+        android:id="@+id/vT_psd_Emi"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:textColor="@color/colorWhite"
+        android:textAllCaps="true"
+        android:background="@drawable/rounded_button"
+        android:text="Buy on EMI"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"
+        android:visibility="gone"/>
+
+</LinearLayout>

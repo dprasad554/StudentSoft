@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".activities.SchoolCalendar"
+    android:orientation="vertical"
+    android:background="@color/active_dots">
+
+    <ImageView
+        android:id="@+id/backPress"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:src="@drawable/back_arrow"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:tint="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/cur_month"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Month"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <com.github.sundeepk.compactcalendarview.CompactCalendarView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/compactcalendar_view"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_height="250dp"
+        app:compactCalendarTargetHeight="250dp"
+        app:compactCalendarTextSize="16sp"
+        app:compactCalendarBackgroundColor="@color/white"
+        app:compactCalendarTextColor="@color/colorPrimary"
+        app:compactCalendarCurrentSelectedDayBackgroundColor="@color/active_dots"
+        app:compactCalendarCurrentDayBackgroundColor="@color/white"
+        app:compactCalendarMultiEventIndicatorColor="@color/colorGreen"/>
+
+
+</LinearLayout>

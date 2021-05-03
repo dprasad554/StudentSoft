@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+
+        <LinearLayout
+            android:id="@+id/ll_bg"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/background_gradient"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/bus_img"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="0.2"
+                android:src="@drawable/bus"
+                android:backgroundTint="@color/white"
+                android:tint="@color/white"
+                android:layout_margin="3dp"/>
+
+            <ImageView
+                android:id="@+id/rchd_img"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="0.2"
+                android:src="@drawable/tick"
+                android:backgroundTint="@color/white"
+                android:tint="@color/white"
+                android:layout_margin="3dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_stopname"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+
+            <TextView
+                android:id="@+id/tv_reached"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:text=" Get Direction"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.geekhive.studentsoft">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- <uses-permission android:name="android.permission.GET_ACCOUNTS" /> -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.NoticeActivity"></activity>
+        <activity android:name=".activities.LibraryActivity" />
+        <activity android:name=".activities.SyllabusActivity" />
+        <activity android:name=".activities.EventsActivity" />
+        <activity android:name=".activities.StationaryActivity" />
+        <activity android:name=".activities.SeatApplicationActivity" />
+        <activity android:name=".activities.SeatVacancy" />
+        <activity android:name=".activities.UploadResult" />
+        <activity android:name=".activities.Meeting" />
+        <activity android:name=".activities.LeaveManagement" />
+        <activity android:name=".activities.ClassTimeTable" />
+        <activity android:name=".activities.UpcomingActivity" />
+        <activity android:name=".activities.AttendanceManagement" />
+        <activity android:name=".activities.ChangePassword" />
+        <activity android:name=".activities.ForgotPassword" />
+        <activity android:name=".activities.LoginActivity" />
+        <activity android:name=".activities.TeacherDashboard" />
+        <activity android:name=".activities.SchoolCalendar" />
+        <activity android:name=".activities.NotificationActivity" />
+        <activity android:name=".activities.StudentDashboard" />
+        <activity android:name=".activities.GuestuserDashboard" />
+        <activity android:name=".activities.Seatavailability" />
+        <activity android:name=".activities.GuestRegistration" />
+        <activity android:name=".activities.SchoolDetailsActivity" />
+        <activity android:name=".activities.StudentHomeWorkActivity" />
+        <activity android:name=".activities.StudentBehaviourActivity" />
+        <activity android:name=".activities.StationaryListActivity" />
+        <activity android:name=".activities.LeaveManagementStudent" />
+        <activity android:name=".activities.Homeworklist" />
+        <activity android:name=".activities.ExamListActivity" />
+        <activity android:name=".activities.ExamDetailsActivity" />
+        <activity android:name=".activities.CalendarSample" />
+        <activity android:name=".activities.TeacherAttendanceManagement" />
+        <activity android:name=".activities.BehaviourList" />
+        <activity android:name=".activities.EventGallery" />
+        <activity android:name=".activities.StudentResultsActivity" />
+        <activity android:name=".activities.TeacherTimeTableActivity" />
+        <activity android:name=".activities.SudentFeeStructure" />
+        <activity android:name=".activities.NonTeachingStaffDashboard" />
+        <activity android:name=".activities.ParentsDashboard" />
+        <activity android:name=".activities.OnlinePayment" />
+        <activity android:name=".activities.DriverDashboard" />
+        <activity android:name=".activities.CartlistActivicty" />
+        <activity android:name=".activities.HostelActivity" />
+        <activity android:name=".activities.StationaryHistory" />
+        <activity android:name=".activities.StationeryOwnerDashboard" />
+        <activity android:name=".activities.AttendnceManagementNonTeaching" />
+        <activity android:name=".activities.StationaryOwnerOrderHistory" />
+        <activity android:name=".activities.StudentProfile" />
+        <activity android:name=".activities.DriverDetailsForParents" />
+        <activity android:name=".activities.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+        <service
+            android:name=".notification.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/notification" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <service
+            android:name=".trackingbackground.Servicecall"
+            android:enabled="true" />
+
+        <receiver
+            android:name=".trackingbackground.SensorRestarterBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:label="RestartServiceWhenStopped">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="uk.ac.shef.oak.ActivityRecognition.RestartSensor" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

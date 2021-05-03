@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item1"
+        android:icon="@drawable/pencil"
+        android:title="Homework" />
+    <item
+        android:id="@+id/item2"
+        android:icon="@drawable/notepad"
+        android:title="Behaviour Note" />
+    <item
+        android:id="@+id/item3"
+        android:icon="@drawable/class_time"
+        android:title="Class Time Table" />
+
+    <item
+        android:id="@+id/item4"
+        android:icon="@drawable/tourist"
+        android:title="Leave" />
+
+    <item
+        android:id="@+id/item5"
+        android:icon="@drawable/calendar"
+        android:title="School Calendar" />
+    <item
+        android:id="@+id/station"
+        android:icon="@drawable/staonary"
+        android:title="Stationary" />
+    <item
+        android:id="@+id/history"
+        android:icon="@drawable/homework"
+        android:title="Stationary History"/>
+    <item
+        android:id="@+id/item6"
+        android:icon="@drawable/forgetpassword"
+        android:title="Change Password" />
+
+    <item
+        android:id="@+id/notice"
+        android:icon="@drawable/notice"
+        android:title="Notice" />
+
+    <item
+        android:id="@+id/item7"
+        android:icon="@drawable/logout"
+        android:title="Logout" />
+
+</menu>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/events"
+        android:title="Student Profile" />
+    <item
+        android:id="@+id/feesummary"
+        android:icon="@drawable/fee_summary"
+        android:title="Fee Summary" />
+    <item
+        android:id="@+id/stationary"
+        android:icon="@drawable/staonary"
+        android:title="Stationary" />
+    <item
+        android:id="@+id/history"
+        android:icon="@drawable/classtime"
+        android:title="Stationary History" />
+    <item
+        android:id="@+id/events"
+        android:icon="@drawable/events"
+        android:title="Events" />
+    <item
+        android:id="@+id/exam_results"
+        android:icon="@drawable/results"
+        android:title="Exam Results" />
+    <item
+        android:id="@+id/notification"
+        android:icon="@drawable/notification"
+        android:title="Notification" />
+    <item
+        android:id="@+id/bustracking"
+        android:icon="@drawable/tracking"
+        android:title="Bus Tracking" />
+    <item
+        android:id="@+id/attendance"
+        android:icon="@drawable/class_time"
+        android:title="Attendance" />
+    <item
+        android:id="@+id/leave"
+        android:icon="@drawable/leave"
+        android:title="Leave"
+        android:visible="false"/>
+    <item
+        android:id="@+id/homework"
+        android:icon="@drawable/homework"
+        android:title="HomeWork"/>
+    <item
+        android:id="@+id/behaviour"
+        android:icon="@drawable/behaviour"
+        android:title="Behaviour Note"/>
+    <item
+        android:id="@+id/notice"
+        android:icon="@drawable/notice"
+        android:title="Notice" />
+    <item
+        android:id="@+id/item6"
+        android:icon="@drawable/forgetpassword"
+        android:title="Change Password" />
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/logout"
+        android:title="Logout" />
+
+</menu>

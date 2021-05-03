@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SeatVacancy"
+    android:orientation="vertical"
+    android:background="@color/active_dots">
+
+    <ImageView
+        android:id="@+id/backPress"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:src="@drawable/back_arrow"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:tint="@color/colorPrimaryDark"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/vR_seats_vacancy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+</LinearLayout>

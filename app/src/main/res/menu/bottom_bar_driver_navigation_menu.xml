@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/attendance"
+        android:icon="@drawable/class_time"
+        android:title="Attendance" />
+    <item
+        android:id="@+id/item6"
+        android:icon="@drawable/forgetpassword"
+        android:title="Change Password" />
+
+    <item
+        android:id="@+id/notice"
+        android:icon="@drawable/notice"
+        android:title="Notice" />
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/logout"
+        android:title="Logout" />
+
+</menu>

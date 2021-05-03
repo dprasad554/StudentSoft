@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/attendance"
+        android:title="Attendance"
+        android:icon="@drawable/attendance"
+        app:showAsAction="always"/>
+    <item android:id="@+id/upcoming_class"
+        android:title="Upcoming Class"
+        android:icon="@drawable/class_time"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/notification"
+        android:title="Notification"
+        android:icon="@drawable/notify"
+        app:showAsAction="always"/>
+</menu>

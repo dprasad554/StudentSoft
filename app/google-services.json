@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "922585737884",
+    "firebase_url": "https://studentsoft-26a19.firebaseio.com",
+    "project_id": "studentsoft-26a19",
+    "storage_bucket": "studentsoft-26a19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922585737884:android:0de1a4e6eb78869e2a9b59",
+        "android_client_info": {
+          "package_name": "com.geekhive.studentsoft"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "922585737884-8ffqglh0vv5j0t4o65oe50rl9ejmnh0a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7yq4Vvo7mQhzljwpategbeKSb4jvetnQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "922585737884-8ffqglh0vv5j0t4o65oe50rl9ejmnh0a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AttendanceManagement"
+    android:orientation="vertical"
+    android:background="@color/active_dots">
+
+    <ImageView
+        android:id="@+id/backPress"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:src="@drawable/back_arrow"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:tint="@color/colorPrimaryDark"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/vC_ah_banner"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_margin="10dp"
+        android:elevation="5dp"
+        android:orientation="vertical"
+        app:cardBackgroundColor="#31F486"
+        app:cardCornerRadius="10dp"
+        app:cardPreventCornerOverlap="false"><!--//#F63C84-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_gradient"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/todaysdate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.8"
+                    android:text="20.02.2019"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_attendance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:gravity="bottom"
+                android:text="Attendance Updated"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/cur_month"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Month"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <com.github.sundeepk.compactcalendarview.CompactCalendarView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/compactcalendar_view"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_height="250dp"
+        app:compactCalendarTargetHeight="250dp"
+        app:compactCalendarTextSize="16sp"
+        app:compactCalendarBackgroundColor="@color/white"
+        app:compactCalendarTextColor="@color/colorPrimary"
+        app:compactCalendarCurrentSelectedDayBackgroundColor="@color/active_dots"
+        app:compactCalendarCurrentDayBackgroundColor="@color/white"
+        app:compactCalendarMultiEventIndicatorColor="@color/colorGreen"/>
+
+
+
+
+</LinearLayout>
